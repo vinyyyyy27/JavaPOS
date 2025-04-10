@@ -1,3 +1,10 @@
+
+import java.text.MessageFormat;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -40,26 +47,26 @@ public class POS extends javax.swing.JFrame {
         jbtnC = new javax.swing.JButton();
         jbtn9 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
+        jbtnConverse = new javax.swing.JButton();
+        jbtnDunk = new javax.swing.JButton();
+        jbtnConverseLow = new javax.swing.JButton();
+        jbtnAirforce1 = new javax.swing.JButton();
+        jbtnCampus = new javax.swing.JButton();
+        jbtnGucci = new javax.swing.JButton();
+        jbtnjm = new javax.swing.JButton();
+        jbtnNb480 = new javax.swing.JButton();
+        jbtnNb530 = new javax.swing.JButton();
+        jbtnOnitsuka = new javax.swing.JButton();
+        jbtnOxford = new javax.swing.JButton();
+        jbtnplayboy = new javax.swing.JButton();
+        jbtnSamba = new javax.swing.JButton();
+        jbtnTravis = new javax.swing.JButton();
+        jbtnVans = new javax.swing.JButton();
+        jbtnWhite = new javax.swing.JButton();
+        jbtnysl = new javax.swing.JButton();
+        jbtnzara = new javax.swing.JButton();
+        jbtnpuma = new javax.swing.JButton();
+        jbtnChunky = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
@@ -77,7 +84,7 @@ public class POS extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jtxtChange = new javax.swing.JTextField();
         jtxtDisplay = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jcboPayment = new javax.swing.JComboBox<>();
         jPanel8 = new javax.swing.JPanel();
         jbtnRemove = new javax.swing.JButton();
         jbtnPay = new javax.swing.JButton();
@@ -223,185 +230,185 @@ public class POS extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/converse.jpg"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jbtnConverse.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnConverse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/converse.jpg"))); // NOI18N
+        jbtnConverse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jbtnConverseActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 110, 90));
+        jPanel3.add(jbtnConverse, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 110, 90));
 
-        jButton14.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/nikeDunkhigh (1).jpg"))); // NOI18N
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        jbtnDunk.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnDunk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/nikeDunkhigh (1).jpg"))); // NOI18N
+        jbtnDunk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                jbtnDunkActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 110, 90));
+        jPanel3.add(jbtnDunk, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 110, 90));
 
-        jButton15.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/converselow1 (1).jpg"))); // NOI18N
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        jbtnConverseLow.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnConverseLow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/converselow1 (1).jpg"))); // NOI18N
+        jbtnConverseLow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                jbtnConverseLowActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 110, 90));
+        jPanel3.add(jbtnConverseLow, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 110, 90));
 
-        jButton16.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/airforce1.jpg"))); // NOI18N
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        jbtnAirforce1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnAirforce1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/airforce1.jpg"))); // NOI18N
+        jbtnAirforce1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                jbtnAirforce1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 110, 90));
+        jPanel3.add(jbtnAirforce1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 110, 90));
 
-        jButton17.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/campus.jpg"))); // NOI18N
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        jbtnCampus.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnCampus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/campus.jpg"))); // NOI18N
+        jbtnCampus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                jbtnCampusActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 110, 90));
+        jPanel3.add(jbtnCampus, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 110, 90));
 
-        jButton18.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/gloafers.jpg"))); // NOI18N
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        jbtnGucci.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnGucci.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/gloafers.jpg"))); // NOI18N
+        jbtnGucci.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                jbtnGucciActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, 90));
+        jPanel3.add(jbtnGucci, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 110, 90));
 
-        jButton19.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/jm.jpg"))); // NOI18N
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        jbtnjm.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnjm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/jm.jpg"))); // NOI18N
+        jbtnjm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                jbtnjmActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 110, 90));
+        jPanel3.add(jbtnjm, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 110, 90));
 
-        jButton20.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/nb480.jpg"))); // NOI18N
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        jbtnNb480.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnNb480.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/nb480.jpg"))); // NOI18N
+        jbtnNb480.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                jbtnNb480ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 110, 90));
+        jPanel3.add(jbtnNb480, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 110, 90));
 
-        jButton21.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/nb530.jpg"))); // NOI18N
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        jbtnNb530.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnNb530.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/nb530.jpg"))); // NOI18N
+        jbtnNb530.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                jbtnNb530ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 110, 90));
+        jPanel3.add(jbtnNb530, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 110, 90));
 
-        jButton22.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/onitsuka.jpg"))); // NOI18N
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        jbtnOnitsuka.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnOnitsuka.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/onitsuka.jpg"))); // NOI18N
+        jbtnOnitsuka.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                jbtnOnitsukaActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 110, 90));
+        jPanel3.add(jbtnOnitsuka, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 110, 90));
 
-        jButton23.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/oxford (1).jpg"))); // NOI18N
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        jbtnOxford.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnOxford.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/oxford (1).jpg"))); // NOI18N
+        jbtnOxford.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                jbtnOxfordActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 90));
+        jPanel3.add(jbtnOxford, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 90));
 
-        jButton24.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/playboy (1).jpg"))); // NOI18N
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        jbtnplayboy.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnplayboy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/playboy (1).jpg"))); // NOI18N
+        jbtnplayboy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                jbtnplayboyActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 110, 90));
+        jPanel3.add(jbtnplayboy, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 110, 90));
 
-        jButton25.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/samba.jpg"))); // NOI18N
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        jbtnSamba.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnSamba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/samba.jpg"))); // NOI18N
+        jbtnSamba.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                jbtnSambaActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 110, 90));
+        jPanel3.add(jbtnSamba, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 110, 90));
 
-        jButton26.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/travisLOW.jpg"))); // NOI18N
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        jbtnTravis.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnTravis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/travisLOW.jpg"))); // NOI18N
+        jbtnTravis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                jbtnTravisActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 110, 90));
+        jPanel3.add(jbtnTravis, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 110, 90));
 
-        jButton27.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/vans.jpg"))); // NOI18N
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        jbtnVans.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnVans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/vans.jpg"))); // NOI18N
+        jbtnVans.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                jbtnVansActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 110, 90));
+        jPanel3.add(jbtnVans, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 110, 90));
 
-        jButton28.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/white.jpg"))); // NOI18N
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        jbtnWhite.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnWhite.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/white.jpg"))); // NOI18N
+        jbtnWhite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                jbtnWhiteActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 110, 90));
+        jPanel3.add(jbtnWhite, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 110, 90));
 
-        jButton29.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/ysl.jpg"))); // NOI18N
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        jbtnysl.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnysl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/ysl.jpg"))); // NOI18N
+        jbtnysl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                jbtnyslActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 110, 90));
+        jPanel3.add(jbtnysl, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 110, 90));
 
-        jButton30.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/zara.jpg"))); // NOI18N
-        jButton30.addActionListener(new java.awt.event.ActionListener() {
+        jbtnzara.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnzara.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/zara.jpg"))); // NOI18N
+        jbtnzara.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton30ActionPerformed(evt);
+                jbtnzaraActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 110, 90));
+        jPanel3.add(jbtnzara, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 110, 90));
 
-        jButton31.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/puma (1).jpg"))); // NOI18N
-        jButton31.addActionListener(new java.awt.event.ActionListener() {
+        jbtnpuma.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnpuma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/puma (1).jpg"))); // NOI18N
+        jbtnpuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton31ActionPerformed(evt);
+                jbtnpumaActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 110, 90));
+        jPanel3.add(jbtnpuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 110, 90));
 
-        jButton32.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/chunky (1).jpg"))); // NOI18N
-        jButton32.addActionListener(new java.awt.event.ActionListener() {
+        jbtnChunky.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jbtnChunky.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/chunky (1).jpg"))); // NOI18N
+        jbtnChunky.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton32ActionPerformed(evt);
+                jbtnChunkyActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 110, 90));
+        jPanel3.add(jbtnChunky, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 110, 90));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 30, 660, 460));
 
@@ -497,14 +504,14 @@ public class POS extends javax.swing.JFrame {
         });
         jPanel7.add(jtxtDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 190, -1));
 
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Visa Card", "Master Card" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        jcboPayment.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jcboPayment.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Visa Card", "Master Card" }));
+        jcboPayment.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                jcboPaymentActionPerformed(evt);
             }
         });
-        jPanel7.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 190, 40));
+        jPanel7.add(jcboPayment, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 190, 40));
 
         jPanel4.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 420, 160));
 
@@ -513,6 +520,11 @@ public class POS extends javax.swing.JFrame {
 
         jbtnRemove.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jbtnRemove.setText("Remove");
+        jbtnRemove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnRemoveActionPerformed(evt);
+            }
+        });
         jPanel8.add(jbtnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 190, 40));
 
         jbtnPay.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -526,14 +538,29 @@ public class POS extends javax.swing.JFrame {
 
         jbtnPrint.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jbtnPrint.setText("Print");
+        jbtnPrint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnPrintActionPerformed(evt);
+            }
+        });
         jPanel8.add(jbtnPrint, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 190, 40));
 
         jbtnExit.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jbtnExit.setText("Exit");
+        jbtnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnExitActionPerformed(evt);
+            }
+        });
         jPanel8.add(jbtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 280, 40));
 
         jbtnReset.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jbtnReset.setText("Reset");
+        jbtnReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnResetActionPerformed(evt);
+            }
+        });
         jPanel8.add(jbtnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 190, 40));
 
         jPanel4.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 40, 430, 160));
@@ -625,13 +652,53 @@ public class POS extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+   //=============FUNCTION==================================
+    public void ItemCost()
+    {
+       double sum = 0;
+       for (int i = 0; i < jTable1.getRowCount(); i++)
+       {
+           sum = sum + Double.parseDouble(jTable1.getValueAt(i, 2).toString());
+       }
+       jtxtSubtotal.setText(Double.toString(sum));
+       double cTotal1 = Double.parseDouble(jtxtSubtotal.getText());
+       double cTax = (cTotal1  * 12)/100;
+       String iTaxTotal = String.format("₱ %.2f", cTax);
+       jtxtTax.setText(iTaxTotal);
+       String iSubTotal = String.format("₱ %.2f", cTotal1);
+       jtxtSubtotal.setText(iSubTotal);
+       String iTotal = String.format("₱ %.2f", cTotal1 + cTax);
+       jtxtTotal.setText(iTotal);
+       String Barcode = String.format("Total is %.2f", cTotal1 + cTax);
+       jtxtBarcode.setText(Barcode);    
+    }
+    
+      //===============================FUNCTION Change=====================
+    public void Change()
+    {
+       double sum = 0;
+       double tax = 3.9;
+       double cash = Double.parseDouble(jtxtDisplay.getText());
+        for (int i = 0; i < jTable1.getRowCount(); i++)
+       {
+           sum = sum + Double.parseDouble(jTable1.getValueAt(i, 2).toString());
+       }
+        double cTax = (sum * 12)/100;
+        double cChange = (cash - (sum + cTax));
+        String ChangeGiven = String.format("₱ %.2f",cChange);
+        jtxtChange.setText(ChangeGiven);     
+    }
+    
+    private void jbtnConverseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnConverseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        double PriceOfItem = 780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Converse Chuck Taylor", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnConverseActionPerformed
 
     private void jbtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn7ActionPerformed
-        // TODO add your handling code here:
+     
         String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -645,7 +712,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn7ActionPerformed
 
     private void jbtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn8ActionPerformed
-        // TODO add your handling code here:
+        
           String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -659,7 +726,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn8ActionPerformed
 
     private void jbtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn4ActionPerformed
-        // TODO add your handling code here:   
+        
         String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -673,7 +740,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn4ActionPerformed
 
     private void jbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn5ActionPerformed
-        // TODO add your handling code here:
+        
          String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -687,7 +754,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn5ActionPerformed
 
     private void jbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn6ActionPerformed
-        // TODO add your handling code here:
+        
          String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -701,7 +768,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn6ActionPerformed
 
     private void jbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn1ActionPerformed
-        // TODO add your handling code here:
+        
            String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -715,7 +782,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn1ActionPerformed
 
     private void jbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn2ActionPerformed
-        // TODO add your handling code here:
+        
         String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -729,7 +796,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn2ActionPerformed
 
     private void jbtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn3ActionPerformed
-        // TODO add your handling code here:
+       
            String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -743,7 +810,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn3ActionPerformed
 
     private void jbtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn0ActionPerformed
-        // TODO add your handling code here:
+        
          String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -757,7 +824,7 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn0ActionPerformed
 
     private void jbtnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnDotActionPerformed
-        // TODO add your handling code here:
+        
         if (! jtxtDisplay.getText().contains("."))
         {
             jtxtDisplay.setText(jtxtDisplay.getText() + jbtnDot.getText());
@@ -766,14 +833,14 @@ public class POS extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtnDotActionPerformed
 
     private void jbtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCActionPerformed
-        // TODO add your handling code here:
+        
         jtxtDisplay.setText("");
         jtxtChange.setText("");
         
     }//GEN-LAST:event_jbtnCActionPerformed
 
     private void jbtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn9ActionPerformed
-        // TODO add your handling code here:
+     
        String Enternumber = jtxtDisplay.getText();
         if (Enternumber == "")
         {
@@ -786,81 +853,147 @@ public class POS extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jbtn9ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    private void jbtnDunkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnDunkActionPerformed
+        
+        double PriceOfItem = 880;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Nike Air jordan Dunk", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnDunkActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    private void jbtnConverseLowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnConverseLowActionPerformed
+        
+        double PriceOfItem = 570;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Converse Low Chuck Taylor ", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnConverseLowActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    private void jbtnAirforce1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnAirforce1ActionPerformed
+       
+        double PriceOfItem = 550;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Nike Airforce 1 ", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnAirforce1ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    private void jbtnCampusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCampusActionPerformed
+       
+        double PriceOfItem = 1290;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Adidas Campus Black", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnCampusActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    private void jbtnGucciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnGucciActionPerformed
+        
+        double PriceOfItem = 7480;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Gucci Loafers", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnGucciActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    private void jbtnjmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnjmActionPerformed
+        
+        double PriceOfItem = 980;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Black Shoes", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnjmActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    private void jbtnNb480ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNb480ActionPerformed
+        
+        double PriceOfItem = 1380;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"New Balance 480", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnNb480ActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    private void jbtnNb530ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnNb530ActionPerformed
+       
+        double PriceOfItem = 1320;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"New Balance 530", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnNb530ActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    private void jbtnOnitsukaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnOnitsukaActionPerformed
+       
+        double PriceOfItem = 1780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Adidas Onitsuka Tiger", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnOnitsukaActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+    private void jbtnOxfordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnOxfordActionPerformed
+       double PriceOfItem = 3480;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Oxford Black Shoes", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnOxfordActionPerformed
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
+    private void jbtnplayboyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnplayboyActionPerformed
+       double PriceOfItem = 2980;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Playboy Wet Look Black Shoes", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnplayboyActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
+    private void jbtnSambaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSambaActionPerformed
+       double PriceOfItem = 2580;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Adidas Samba", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnSambaActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
+    private void jbtnTravisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnTravisActionPerformed
+        double PriceOfItem = 3780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Nike Dunk Travis ", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnTravisActionPerformed
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27ActionPerformed
+    private void jbtnVansActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnVansActionPerformed
+       double PriceOfItem = 780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Vans Old Skool", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnVansActionPerformed
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton28ActionPerformed
+    private void jbtnWhiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnWhiteActionPerformed
+       double PriceOfItem = 780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Converse Chuck Taylor", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnWhiteActionPerformed
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton29ActionPerformed
+    private void jbtnyslActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnyslActionPerformed
+       double PriceOfItem = 8580;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Saint Laurent Loafers", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnyslActionPerformed
 
-    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30ActionPerformed
+    private void jbtnzaraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnzaraActionPerformed
+        double PriceOfItem = 7880;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Zara Black Shoes", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnzaraActionPerformed
 
-    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton31ActionPerformed
+    private void jbtnpumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnpumaActionPerformed
+       double PriceOfItem = 5780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Puma Palermo", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnpumaActionPerformed
 
-    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton32ActionPerformed
+    private void jbtnChunkyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnChunkyActionPerformed
+       double PriceOfItem = 3780;
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Nike Al8", "1",PriceOfItem});
+        ItemCost();
+    }//GEN-LAST:event_jbtnChunkyActionPerformed
 
     private void jtxtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtTotalActionPerformed
         // TODO add your handling code here:
@@ -894,17 +1027,83 @@ public class POS extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jtxtChangeActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void jcboPaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcboPaymentActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_jcboPaymentActionPerformed
 
     private void jtxtBarcodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtBarcodeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtxtBarcodeActionPerformed
 
     private void jbtnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPayActionPerformed
-        // TODO add your handling code here:
+       if (jcboPayment.getSelectedItem().equals("Cash")) 
+       {
+           Change();
+       }
+       else
+       {
+           jtxtChange.setText("");
+           jtxtDisplay.setText("");
+       }
     }//GEN-LAST:event_jbtnPayActionPerformed
+
+    private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setRowCount(0);
+        jtxtChange.setText("");
+        jtxtTax.setText("");
+        jtxtTotal.setText("");
+        jtxtSubtotal.setText("");
+        jtxtDisplay.setText("");
+        jtxtBarcode.setText("");
+       
+        
+    }//GEN-LAST:event_jbtnResetActionPerformed
+
+    private void jbtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPrintActionPerformed
+        
+        MessageFormat header = new MessageFormat("Printing in progress");
+        MessageFormat footer = new MessageFormat("Page {0, number, integer }");
+        
+        try
+        {
+            jTable1.print(JTable.PrintMode.NORMAL,header,footer);
+        }
+        catch(java.awt.print.PrinterException e)
+        {
+            System.err.format("No Printer found", e.getMessage());
+        }
+        
+    }//GEN-LAST:event_jbtnPrintActionPerformed
+
+    private void jbtnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRemoveActionPerformed
+         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+         int RemoveItem = jTable1.getSelectedRow();
+         if(RemoveItem >= 0)
+         {
+             model.removeRow(RemoveItem);
+         }
+         ItemCost();
+         if (jcboPayment.getSelectedItem().equals("Cash"))
+         {
+             Change();
+         }
+         else
+         {
+             jtxtChange.setText("");
+             jtxtDisplay.setText("");
+         }
+    }//GEN-LAST:event_jbtnRemoveActionPerformed
+    
+    private JFrame frame;
+    private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
+        frame = new JFrame("Exit"); 
+        if (JOptionPane.showConfirmDialog(frame,"Confirm if you want to exit", "Point Of Sale",
+                JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION)
+        {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jbtnExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -942,27 +1141,6 @@ public class POS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1003,13 +1181,34 @@ public class POS extends javax.swing.JFrame {
     private javax.swing.JButton jbtn7;
     private javax.swing.JButton jbtn8;
     private javax.swing.JButton jbtn9;
+    private javax.swing.JButton jbtnAirforce1;
     private javax.swing.JButton jbtnC;
+    private javax.swing.JButton jbtnCampus;
+    private javax.swing.JButton jbtnChunky;
+    private javax.swing.JButton jbtnConverse;
+    private javax.swing.JButton jbtnConverseLow;
     private javax.swing.JButton jbtnDot;
+    private javax.swing.JButton jbtnDunk;
     private javax.swing.JButton jbtnExit;
+    private javax.swing.JButton jbtnGucci;
+    private javax.swing.JButton jbtnNb480;
+    private javax.swing.JButton jbtnNb530;
+    private javax.swing.JButton jbtnOnitsuka;
+    private javax.swing.JButton jbtnOxford;
     private javax.swing.JButton jbtnPay;
     private javax.swing.JButton jbtnPrint;
     private javax.swing.JButton jbtnRemove;
     private javax.swing.JButton jbtnReset;
+    private javax.swing.JButton jbtnSamba;
+    private javax.swing.JButton jbtnTravis;
+    private javax.swing.JButton jbtnVans;
+    private javax.swing.JButton jbtnWhite;
+    private javax.swing.JButton jbtnjm;
+    private javax.swing.JButton jbtnplayboy;
+    private javax.swing.JButton jbtnpuma;
+    private javax.swing.JButton jbtnysl;
+    private javax.swing.JButton jbtnzara;
+    private javax.swing.JComboBox<String> jcboPayment;
     private javax.swing.JTextField jtxtBarcode;
     private javax.swing.JTextField jtxtChange;
     private javax.swing.JTextField jtxtDisplay;
